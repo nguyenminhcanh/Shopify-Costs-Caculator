@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify Plus Costs Caculator</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div class="caculatorContainer">
+        <div class="caculatorHeader">
+            <h2> Shopify Plus Costs Caculator</h2>
+        </div>
+        <div class="caculatorContent">
+           <form action="/caculator" id="caculatorForm" method="post">
+                <div class="caculatorField">
+                    <label for="monthlyorders">Monthly orders</label>
+                    <input name="monthlyorders" id="monthlyorders" type="text" value="1000">
+                </div>
+                <div class="caculatorField">
+                    <label for="aov">AOV($)</label>
+                    <input name="aov" id="aov" type="text" value="33">
+                </div>
+                <div class="caculatorField">
+                    <label for="shopifyplan">Plan</label>
+                    <select name="shopifyplan" id="shopifyplan">
+                        <option value="29">Basic</option>
+                        <option value="79">Shopify</option>
+                        <option value="399">Advance</option>
+                        <option value="2500">Plus</option>
+                    </select>
+                </div>
+                <div class="caculatorField">
+                    <label for="shopifyplan">Email<span style="color: red;margin: 0 5px;">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="caculatorButton">
+                    <button type="submit" id="caculatorBtn">Caculator</button>
+                </div>
+            </form>
+            <div id="gmv"></div>
+        </div>    
+    </div>
+   
+</body>
+</html>
