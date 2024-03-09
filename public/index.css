@@ -1,0 +1,46 @@
+:root{
+    --color-btn: #fff;
+    --bg-btn: #000;
+    --border-color-btn: #000;
+}
+.caculatorContainer {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.caculatorField label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.caculatorField {
+    width: 100%;
+    margin: 10px 0;
+}
+.caculatorField select, .caculatorField input {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 5px 10px;
+    height: 30px;
+    margin: 0;
+}
+.caculatorField select:focus, .caculatorField input:focus {
+    outline: none;
+}
+.caculatorField select {
+    height: 44px;
+}
+.caculatorButton button {
+    background: var(--bg-btn);
+    color: var(--color-btn);
+    min-height: 44px;
+    min-width: 120px;
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+.caculatorButton button:hover {
+    cursor: pointer;
+    background: var(--color-btn);
+    color: var(--bg-btn);
+    border: 1px solid #000;
+}

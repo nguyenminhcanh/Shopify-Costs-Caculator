@@ -36,7 +36,7 @@ const createGoogleSheet = async (m_ordes, aov) => {
     });
 
     const values = [
-        [m_ordes, aov, email],
+        [m_ordes, aov],
     ];
     const resource = {
         values,
